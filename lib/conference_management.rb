@@ -7,7 +7,7 @@ require 'date'
 module ConferenceManagement
   list = FileParser.new('./data/talks.txt')
   planner = Planner.new
-  result = planner.plan list, [180, 180, 240, 240]
+  result = planner.plan list
   printer = Printer.new
   printer.printer(result)
 end

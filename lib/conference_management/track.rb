@@ -1,7 +1,11 @@
 module ConferenceManagement
   class Track
-    attr_accessor :talks, :total_length
-    def initialize()
+    attr_accessor :morning_session
+    attr_accessor :afternoon_session
+
+    def initialize
+      @morning_session = []
+      @afternoon_session = []
     end
   end
 end
